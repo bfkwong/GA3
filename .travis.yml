@@ -1,5 +1,10 @@
 language: java
 jdk:
     - oraclejdk11
+addons:
+  sonarcloud:
+    organization: "bfkwong"
+    token:
+      secure: d42dda326c435b78f22202362893ed86729a5f2e
 script:
     - ant build
